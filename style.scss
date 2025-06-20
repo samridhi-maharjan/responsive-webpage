@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary-color: #f4f7ff;
+$secondary-color:rgb(255, 254, 254);
+$label-color: #afb4c0;
+$value-color:rgb(69, 69, 69);
+$font-main: 'Poppins', sans-serif;
+$title-size:30px;
+$label-size:8px;
+$value-size:10px;
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+}
+
+.sidebar{
+    background-color: $primary-color;
+    width: 20%;
+    height:auto;
+
+    .contact-section{
+        display: block;
+
+        .contact-details{
+            display: flex;
+            margin-left: 20px;
+
+            .contact-icon{
+                height: 10px;
+                width: 10px;
+                padding: 5px;
+                background-color: $label-color;
+                border-radius: 100px;
+            }
+            .contact-content{
+                display: block;
+                font-family: $font-main;
+                margin-left: 3px;
+
+                .contact-label{
+                    font-size: $label-size;
+                    color: $label-color;
+                }
+
+                .contact-value{
+                    font-size: $value-size;
+                    color:$value-color;
+                }
+            }
+        }
+
+    }
+
+    .social-section{
+        display: block;
+
+        .social-title{
+            color: $label-color;
+            font-size: $label-size;
+        }
+
+        .social-box{
+            display:block;
+
+            .social-details{
+            display: flex;
+            margin-left: 20px;
+
+                .social-icon{
+                    height: 20px;
+                    width: 20px;
+                }
+                .social-contents{
+                    display: block;
+                    font-family: $font-main;
+                    margin-left: 3px;
+
+                    .social-label{
+                        font-size: $label-size;
+                        color: $label-color;
+                    }
+
+                    .social-value{
+                        font-size: $value-size;
+                        color:$value-color;
+                    }
+                }
+            }
+        }
+
+    }
+    .language-section{
+        display: block;
+
+        .language-title{
+            color: $label-color;
+            font-size: $label-size;
+        }
+
+        .language-box{
+            display:block;
+
+            .language-details{
+            display: flex;
+            margin-left: 20px;
+
+                .language-icon{
+                    height: 20px;
+                    width: 20px;
+                }
+                .language-contents{
+                    display: block;
+                    font-family: $font-main;
+                    margin-left: 3px;
+
+                    .language-label{
+                        font-size: $label-size;
+                        color: $label-color;
+                    }
+
+                    .language-value{
+                        font-size: $value-size;
+                        color:$value-color;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.container{
+    background-color:$secondary-color;
+}

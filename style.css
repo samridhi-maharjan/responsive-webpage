@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #f4f7ff;
+  width: 20%;
+  height: auto;
+}
+.sidebar .contact-section {
+  display: block;
+}
+.sidebar .contact-section .contact-details {
+  display: flex;
+  margin-left: 20px;
+}
+.sidebar .contact-section .contact-details .contact-icon {
+  height: 10px;
+  width: 10px;
+  padding: 5px;
+  background-color: #afb4c0;
+  border-radius: 100px;
+}
+.sidebar .contact-section .contact-details .contact-content {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  margin-left: 3px;
+}
+.sidebar .contact-section .contact-details .contact-content .contact-label {
+  font-size: 8px;
+  color: #afb4c0;
+}
+.sidebar .contact-section .contact-details .contact-content .contact-value {
+  font-size: 10px;
+  color: rgb(69, 69, 69);
+}
+.sidebar .social-section {
+  display: block;
+}
+.sidebar .social-section .social-title {
+  color: #afb4c0;
+  font-size: 8px;
+}
+.sidebar .social-section .social-box {
+  display: block;
+}
+.sidebar .social-section .social-box .social-details {
+  display: flex;
+  margin-left: 20px;
+}
+.sidebar .social-section .social-box .social-details .social-icon {
+  height: 20px;
+  width: 20px;
+}
+.sidebar .social-section .social-box .social-details .social-contents {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  margin-left: 3px;
+}
+.sidebar .social-section .social-box .social-details .social-contents .social-label {
+  font-size: 8px;
+  color: #afb4c0;
+}
+.sidebar .social-section .social-box .social-details .social-contents .social-value {
+  font-size: 10px;
+  color: rgb(69, 69, 69);
+}
+.sidebar .language-section {
+  display: block;
+}
+.sidebar .language-section .language-title {
+  color: #afb4c0;
+  font-size: 8px;
+}
+.sidebar .language-section .language-box {
+  display: block;
+}
+.sidebar .language-section .language-box .language-details {
+  display: flex;
+  margin-left: 20px;
+}
+.sidebar .language-section .language-box .language-details .language-icon {
+  height: 20px;
+  width: 20px;
+}
+.sidebar .language-section .language-box .language-details .language-contents {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  margin-left: 3px;
+}
+.sidebar .language-section .language-box .language-details .language-contents .language-label {
+  font-size: 8px;
+  color: #afb4c0;
+}
+.sidebar .language-section .language-box .language-details .language-contents .language-value {
+  font-size: 10px;
+  color: rgb(69, 69, 69);
+}
+
+.container {
+  background-color: rgb(255, 254, 254);
+}/*# sourceMappingURL=style.css.map */
