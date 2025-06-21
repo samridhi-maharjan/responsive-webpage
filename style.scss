@@ -6,8 +6,8 @@ $label-color: #afb4c0;
 $value-color:rgb(69, 69, 69);
 $font-main: 'Poppins', sans-serif;
 $title-size:30px;
-$label-size:8px;
-$value-size:10px;
+$label-size:11px;
+$value-size:12px;
 
 *{
     padding: 0px;
@@ -22,16 +22,76 @@ body{
     width: 20%;
     height:auto;
 
+    .line{
+        border: none;
+        height: 1px;
+        background: $label-color;
+        margin: 20px 20px;
+    }
+   .banner{
+
+        .banner-photo{
+            width:100%;
+            object-fit: cover;
+            height: 100%;
+            margin-bottom: 25px;
+        }
+        .name{
+            justify-self: center;
+            background-image: linear-gradient(to right, #A478E8, #516CF7);
+            color: transparent;
+            background-clip: text;
+        }
+        .role{
+            justify-self: center;
+        }
+   }
+
+   .quote-section{
+        text-align: center;
+        position: relative;
+
+        .quote{
+            font-size: 18px;
+            font-weight: 600;
+            color: #4a4a6a;
+            margin-bottom: 10px;
+
+            q {
+                quotes: "“" "”" "‘" "’";
+                &::before {
+                    content: open-quote;
+                    font-size: 24px;
+                    color: #8a8a8a;
+                }
+                &::after {
+                    content: close-quote;
+                    font-size: 24px;
+                    color: #8a8a8a;
+                }
+            }
+        }
+
+        .author{
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+   }
+
     .contact-section{
         display: block;
 
         .contact-details{
             display: flex;
             margin-left: 20px;
+            margin-bottom: 15px;
 
             .contact-icon{
-                height: 10px;
-                width: 10px;
+                height: 15px;
+                width: 15px;
                 padding: 5px;
                 background-color: $label-color;
                 border-radius: 100px;
@@ -39,7 +99,7 @@ body{
             .contact-content{
                 display: block;
                 font-family: $font-main;
-                margin-left: 3px;
+                margin-left: 8px;
 
                 .contact-label{
                     font-size: $label-size;
@@ -60,7 +120,8 @@ body{
 
         .social-title{
             color: $label-color;
-            font-size: $label-size;
+            font-size: $label-size + 2px;
+            margin:0px 0px 10px 20px;
         }
 
         .social-box{
@@ -69,15 +130,16 @@ body{
             .social-details{
             display: flex;
             margin-left: 20px;
+            margin-bottom: 15px;
 
                 .social-icon{
-                    height: 20px;
-                    width: 20px;
+                    height: 25px;
+                    width: 25px;
                 }
                 .social-contents{
                     display: block;
                     font-family: $font-main;
-                    margin-left: 3px;
+                    margin-left: 8px;
 
                     .social-label{
                         font-size: $label-size;
@@ -98,7 +160,8 @@ body{
 
         .language-title{
             color: $label-color;
-            font-size: $label-size;
+            font-size: $label-size + 2px;
+            margin:0px 0px 10px 20px;
         }
 
         .language-box{
@@ -107,15 +170,16 @@ body{
             .language-details{
             display: flex;
             margin-left: 20px;
+            margin-bottom: 15px;
 
                 .language-icon{
-                    height: 20px;
-                    width: 20px;
+                    height: 25px;
+                    width: 25px;
                 }
                 .language-contents{
                     display: block;
                     font-family: $font-main;
-                    margin-left: 3px;
+                    margin-left:8px;
 
                     .language-label{
                         font-size: $label-size;
