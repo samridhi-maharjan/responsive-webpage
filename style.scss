@@ -73,7 +73,7 @@ body{
             color: $light;
             font-family: $font-main;
             padding: 0 30px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
 
             q {
                 quotes: "“" "”" "‘" "’";
@@ -93,7 +93,7 @@ body{
         .author{
             display: block;
             text-align: left;
-            margin: 10px 0px 30px 30px;
+            margin: 5px 0px 30px 30px;
             font-size: $label-size;
             color: #9ca3af;
             font-family: $secondary-font;
@@ -490,6 +490,30 @@ body{
     margin-bottom: 60px;
     margin-left: $container-section-margin;
 
+    .section-header{
+            margin-top: 20px;
+            margin-left:$container-section-margin;
+            display: flex;
+            align-items: center;
+            
+            .section-title{
+                font-family: $font-main;
+                font-weight: 500;
+                color: $content-color;
+            }
+
+            // .skills__dot{
+            //     display: inline-block;           // prevents stretching from flex/grid
+            //     width: 8px;
+            //     height: 8px;
+            //     background-color: #6c63ff;
+            //     border-radius: 50%;              // makes it a circle
+            //     border: 10px solid #fff;
+            //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
+            //     //flex-shrink: 0; 
+            // }
+        }
+
     .education-list {
         display: flex;
 
@@ -556,6 +580,30 @@ body{
     margin-bottom: 60px;
     margin-left: $container-section-margin;
     margin-right: 30px;
+
+    .section-header{
+            margin-top: 20px;
+            margin-left:$container-section-margin;
+            display: flex;
+            align-items: center;
+            
+            .section-title{
+                font-family: $font-main;
+                font-weight: 500;
+                color: $content-color;
+            }
+
+            // .skills__dot{
+            //     display: inline-block;           // prevents stretching from flex/grid
+            //     width: 8px;
+            //     height: 8px;
+            //     background-color: #6c63ff;
+            //     border-radius: 50%;              // makes it a circle
+            //     border: 10px solid #fff;
+            //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
+            //     //flex-shrink: 0; 
+            // }
+        }
 
     .tool-lists {
         display: flex;
