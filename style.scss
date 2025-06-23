@@ -28,7 +28,7 @@ body {
 
 .sidebar {
   background-color: $primary-color;
-  width: 30%;
+  width: 25%;
   height: auto;
 
   .line {
@@ -222,11 +222,12 @@ body {
 .container {
   background-color: $secondary-color;
   margin-left: $container-margin;
+  width: 75%;
 
   //   project-section
   .project-section {
-    margin: 20px 30px 80px 0px;
-    border-left: 1px solid $label-color;
+    margin: 20px 50px 80px 0px;
+    // border-left: 1px solid $label-color;
     height: 200px;
 
     .section-header {
@@ -249,10 +250,12 @@ body {
         font-family: $font-main;
         font-weight: 500;
         color: $content-color;
+        margin-left: 50px;
       }
     }
     .project-list {
       display: flex;
+      margin-left: $container-section-margin + 50px;
       font-family: $secondary-font;
 
       .project-card {
@@ -313,6 +316,7 @@ body {
   // skill-section
   .skills-section {
     margin-bottom: 60px;
+    margin-right: 30px;
 
     .section-header {
       margin-left: $container-section-margin;
@@ -335,6 +339,7 @@ body {
         font-family: $font-main;
         font-weight: 500;
         color: $content-color;
+        margin-left: 50px;
       }
     }
     // design-skills
@@ -344,6 +349,7 @@ body {
       grid-template-columns: 200px 1fr;
       gap: 30px;
       align-items: start;
+      margin-left: 40px;
 
       &:last-child {
         margin-bottom: 0;
@@ -352,7 +358,7 @@ body {
       .skills__category {
         display: flex;
         flex-direction: column;
-        margin-left: $container-section-margin;
+        margin-left: $container-section-margin + 50px;
 
         .skills__icon {
           width: 30px;
@@ -418,6 +424,7 @@ body {
     grid-template-columns: 200px 1fr;
     gap: 30px;
     align-items: start;
+    margin-left: 40px;
 
     &:last-child {
       margin-bottom: 0;
@@ -426,7 +433,7 @@ body {
     .skills__category {
       display: flex;
       flex-direction: column;
-      margin-left: $container-section-margin;
+      margin-left: $container-section-margin + 50px;
 
       .skills__icon {
         width: 30px;
@@ -490,6 +497,7 @@ body {
 .experience-section {
   margin-bottom: 60px;
   position: relative;
+  margin-right: 50px;
 
   .section-header {
     margin-left: $container-section-margin;
@@ -513,6 +521,7 @@ body {
       font-family: $font-main;
       font-weight: 500;
       color: $content-color;
+      margin-left: 50px;
     }
   }
 
@@ -623,6 +632,7 @@ body {
 .education-section {
   margin-bottom: 60px;
   margin-left: $container-section-margin;
+  margin-right: 50px;
 
   .section-header {
     margin-top: 20px;
@@ -644,10 +654,12 @@ body {
       font-family: $font-main;
       font-weight: 500;
       color: $content-color;
+      margin-left: 50px;
     }
   }
 
   .education-list {
+    margin-left: $container-section-margin + 50px;
     display: flex;
 
     .education-cards {
@@ -716,7 +728,6 @@ body {
 
   .section-header {
     margin-top: 20px;
-    margin-left: $container-section-margin;
     display: flex;
     align-items: center;
 
@@ -734,19 +745,9 @@ body {
     .section-title {
       font-family: $font-main;
       font-weight: 500;
+      margin-left: 50px;
       color: $content-color;
     }
-
-    // .skills__dot{
-    //     display: inline-block;           // prevents stretching from flex/grid
-    //     width: 8px;
-    //     height: 8px;
-    //     background-color: #6c63ff;
-    //     border-radius: 50%;              // makes it a circle
-    //     border: 10px solid #fff;
-    //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
-    //     //flex-shrink: 0;
-    // }
   }
 
   .tool-lists {
@@ -757,6 +758,7 @@ body {
     .tool-row1,
     .tool-row2 {
       display: flex;
+      margin-left: $container-section-margin + 50px;
 
       .tool-card {
         text-align: center;

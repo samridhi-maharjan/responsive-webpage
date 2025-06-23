@@ -13,7 +13,7 @@ body {
 
 .sidebar {
   background-color: #f7f9fc;
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 .sidebar .line {
@@ -184,10 +184,10 @@ body {
 .container {
   background-color: rgb(255, 254, 254);
   margin-left: 30px;
+  width: 75%;
 }
 .container .project-section {
-  margin: 20px 30px 80px 0px;
-  border-left: 1px solid #afb4c0;
+  margin: 20px 50px 80px 0px;
   height: 200px;
 }
 .container .project-section .section-header {
@@ -209,9 +209,11 @@ body {
   font-family: "outfit";
   font-weight: 500;
   color: #2e2e48;
+  margin-left: 50px;
 }
 .container .project-section .project-list {
   display: flex;
+  margin-left: 75px;
   font-family: "DM sans";
 }
 .container .project-section .project-list .project-card {
@@ -263,6 +265,7 @@ body {
 }
 .container .skills-section {
   margin-bottom: 60px;
+  margin-right: 30px;
 }
 .container .skills-section .section-header {
   margin-left: 25px;
@@ -284,6 +287,7 @@ body {
   font-family: "outfit";
   font-weight: 500;
   color: #2e2e48;
+  margin-left: 50px;
 }
 .container .skills-section .skills__group {
   margin-bottom: 30px;
@@ -291,6 +295,7 @@ body {
   grid-template-columns: 200px 1fr;
   gap: 30px;
   align-items: start;
+  margin-left: 40px;
 }
 .container .skills-section .skills__group:last-child {
   margin-bottom: 0;
@@ -298,7 +303,7 @@ body {
 .container .skills-section .skills__group .skills__category {
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
+  margin-left: 75px;
 }
 .container .skills-section .skills__group .skills__category .skills__icon {
   width: 30px;
@@ -355,6 +360,7 @@ body {
   grid-template-columns: 200px 1fr;
   gap: 30px;
   align-items: start;
+  margin-left: 40px;
 }
 .container .skills__group__dev:last-child {
   margin-bottom: 0;
@@ -362,7 +368,7 @@ body {
 .container .skills__group__dev .skills__category {
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
+  margin-left: 75px;
 }
 .container .skills__group__dev .skills__category .skills__icon {
   width: 30px;
@@ -418,6 +424,7 @@ body {
 .experience-section {
   margin-bottom: 60px;
   position: relative;
+  margin-right: 50px;
 }
 .experience-section .section-header {
   margin-left: 25px;
@@ -439,6 +446,7 @@ body {
   font-family: "outfit";
   font-weight: 500;
   color: #2e2e48;
+  margin-left: 50px;
 }
 .experience-section .experience-list {
   margin-left: 125px;
@@ -531,6 +539,7 @@ body {
 .education-section {
   margin-bottom: 60px;
   margin-left: 25px;
+  margin-right: 50px;
 }
 .education-section .section-header {
   margin-top: 20px;
@@ -551,8 +560,10 @@ body {
   font-family: "outfit";
   font-weight: 500;
   color: #2e2e48;
+  margin-left: 50px;
 }
 .education-section .education-list {
+  margin-left: 75px;
   display: flex;
 }
 .education-section .education-list .education-cards {
@@ -611,7 +622,6 @@ body {
 }
 .tools-section .section-header {
   margin-top: 20px;
-  margin-left: 25px;
   display: flex;
   align-items: center;
 }
@@ -628,6 +638,7 @@ body {
 .tools-section .section-header .section-title {
   font-family: "outfit";
   font-weight: 500;
+  margin-left: 50px;
   color: #2e2e48;
 }
 .tools-section .tool-lists {
@@ -638,6 +649,7 @@ body {
 .tools-section .tool-lists .tool-row1,
 .tools-section .tool-lists .tool-row2 {
   display: flex;
+  margin-left: 75px;
 }
 .tools-section .tool-lists .tool-row1 .tool-card,
 .tools-section .tool-lists .tool-row2 .tool-card {
