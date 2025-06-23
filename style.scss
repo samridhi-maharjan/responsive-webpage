@@ -224,17 +224,19 @@ body {
   margin-left: $container-margin;
   width: 75%;
 
-  // vertical line
-  &::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    bottom: 0;
-    left: calc(25% + $container-margin + 2px);
-    width: 2px;
-    background-color: $label-color;
-    z-index: 0;
-    height: calc(100% + 890px);
+  @media (min-width: 1240px) {
+    // vertical line
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      bottom: 0;
+      left: calc(25% + $container-margin + 2px);
+      width: 2px;
+      background-color: $label-color;
+      z-index: 0;
+      height: calc(100% + 890px);
+    }
   }
 
   //   project-section
@@ -815,6 +817,493 @@ body {
         .tool-detail {
           font-size: 12px;
           color: $lighter;
+        }
+      }
+    }
+  }
+}
+
+// Mobile Responsive Styles
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    order: 1;
+
+    .banner {
+      .banner-photo {
+        margin: 0px auto;
+      }
+
+      .name {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      .role {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      padding: 0 20px;
+
+      .contact-details {
+        margin-left: 0;
+        margin-bottom: 10px;
+
+        .contact-icon {
+          height: 16px;
+          width: 16px;
+          padding: 3px;
+        }
+
+        .contact-content {
+          margin-left: 8px;
+
+          .contact-label {
+            font-size: 10px;
+          }
+
+          .contact-value {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+
+    .social-section {
+      padding: 0 20px;
+
+      .social-title {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+
+      .social-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+        .social-details {
+          margin-left: 0;
+          margin-bottom: 10px;
+
+          .social-icon {
+            height: 20px;
+            width: 20px;
+          }
+
+          .social-contents {
+            margin-left: 8px;
+
+            .social-label {
+              font-size: 10px;
+            }
+
+            .social-value {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+
+    .language-section {
+      padding: 0 20px;
+
+      .language-title {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+
+      .language-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+        .language-details {
+          margin-left: 0;
+          margin-bottom: 10px;
+
+          .language-icon {
+            height: 20px;
+            width: 20px;
+          }
+
+          .language-contents {
+            margin-left: 8px;
+
+            .language-label {
+              font-size: 10px;
+            }
+
+            .language-value {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    order: 2;
+
+    &::before {
+      left: 32px;
+      height: calc(100% + 500px);
+    }
+
+    .project-section {
+      margin: 20px 20px 60px 20px;
+      height: auto;
+
+      .section-header {
+        margin-left: 0;
+
+        .section-title {
+          margin-left: 20px;
+          font-size: 20px;
+        }
+      }
+
+      .project-list {
+        flex-direction: column;
+        margin-left: 20px;
+
+        .project-card {
+          margin-left: 0;
+          margin-bottom: 20px;
+          width: 100%;
+          height: auto;
+
+          .project-card-content {
+            .project-icon {
+              width: 60px;
+              height: 60px;
+            }
+
+            .project-content {
+              margin-left: 15px;
+
+              .project-title {
+                font-size: 16px;
+                margin-bottom: 8px;
+              }
+
+              .project-description {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .experience-section {
+      margin: 20px 20px 60px 20px;
+
+      .section-header {
+        margin-left: 0;
+
+        .section-title {
+          margin-left: 20px;
+          font-size: 20px;
+        }
+      }
+
+      .experience-list {
+        margin-left: 20px;
+
+        &::before {
+          left: -13px;
+        }
+
+        .experience-details {
+          grid-template-columns: 1fr;
+          gap: 15px;
+
+          .experience-left {
+            margin-left: 10px;
+
+            .experience-header {
+              .company-logo {
+                width: 35px;
+                height: 35px;
+              }
+
+              .experience-info {
+                .experience-title {
+                  font-size: 13px;
+                }
+
+                .experience-company {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+
+          .experience-content {
+            .experience-description {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .education-section {
+      margin: 20px 20px 60px 20px;
+
+      .section-header {
+        margin-left: 0;
+
+        .section-title {
+          margin-left: 20px;
+          font-size: 20px;
+        }
+      }
+
+      .education-list {
+        margin-left: 20px;
+        flex-direction: column;
+
+        .education-cards {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 20px;
+
+          .education-details {
+            .education-logo {
+              width: 40px;
+              height: 40px;
+            }
+
+            .education-name {
+              font-size: 13px;
+            }
+          }
+
+          .education-content {
+            .education-title {
+              font-size: 15px;
+            }
+
+            .education-date {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .skills-section {
+      margin: 20px 20px 60px 20px;
+
+      .section-header {
+        margin-left: 0;
+
+        .section-title {
+          margin-left: 20px;
+          font-size: 20px;
+        }
+      }
+
+      .skills__group {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-left: 0;
+
+        .skills__category {
+          margin-left: 20px;
+          flex-direction: row;
+          align-items: center;
+
+          .skills__icon {
+            margin-bottom: 0;
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+          }
+
+          .skills__label {
+            font-size: 13px;
+          }
+        }
+
+        .skills__items {
+          margin-left: 20px;
+          width: 100%;
+          max-width: calc(100vw - 60px);
+
+          .skills__item {
+            padding: 8px 10px;
+            font-size: 12px;
+            flex-direction: column;
+            gap: 5px;
+            width: auto;
+            min-width: fit-content;
+
+            .line {
+              height: 1px;
+              width: 20px;
+              border-left: none;
+              border-top: 1px solid $label-color;
+              opacity: 0.5;
+            }
+
+            .item-group {
+              padding: 2px 0;
+              text-align: center;
+            }
+
+            .skills__list {
+              padding: 5px 10px;
+              margin: 0;
+
+              li {
+                font-size: 11px;
+                margin-bottom: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .skills__group__dev {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-left: 0;
+
+      .skills__category {
+        margin-left: 20px;
+        flex-direction: row;
+        align-items: center;
+
+        .skills__icon {
+          margin-bottom: 0;
+          margin-right: 10px;
+          width: 25px;
+          height: 25px;
+        }
+
+        .skills__label {
+          font-size: 13px;
+        }
+      }
+
+      .skills__items {
+        margin-left: 20px;
+        width: 100%;
+        max-width: calc(100vw - 60px);
+
+        .skills__item {
+          padding: 8px 10px;
+          font-size: 12px;
+          flex-direction: column;
+          gap: 5px;
+          width: auto;
+          min-width: fit-content;
+
+          .line {
+            height: 1px;
+            width: 20px;
+            border-left: none;
+            border-top: 1px solid $label-color;
+            opacity: 0.5;
+          }
+
+          .item-group {
+            padding: 2px 0;
+            text-align: center;
+          }
+
+          .item-group-col {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+
+            .line {
+              width: 20px;
+              height: 1px;
+              border: none;
+              border-top: 1px solid $label-color;
+              margin: 2px 0;
+            }
+          }
+
+          .skills__list {
+            padding: 5px 10px;
+            margin: 0;
+
+            li {
+              font-size: 11px;
+              margin-bottom: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .tools-section {
+      margin: 20px 20px 60px 20px;
+
+      .section-header {
+        margin-left: 0;
+
+        .section-title {
+          margin-left: 20px;
+          font-size: 20px;
+        }
+      }
+
+      .tool-lists {
+        margin-left: -20px;
+        gap: 15px;
+
+        .tool-row1,
+        .tool-row2 {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          justify-content: flex-start;
+          margin-bottom: 15px;
+
+          .tool-card {
+            width: calc(50% - 7.5px);
+            min-width: auto;
+            padding: 15px;
+            margin-right: 0;
+            margin-bottom: 0;
+
+            .tool-icon {
+              width: 40px;
+              height: 40px;
+            }
+
+            .tool-name {
+              font-size: 13px;
+            }
+
+            .tool-detail {
+              font-size: 11px;
+            }
+          }
         }
       }
     }
