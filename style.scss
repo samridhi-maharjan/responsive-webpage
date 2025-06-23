@@ -1,346 +1,343 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Michroma&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&display=swap");
 
-$primary-color: #f4f7ff;
-$secondary-color:rgb(255, 254, 254);
+$primary-color: #f7f9fc;
+$secondary-color: rgb(255, 254, 254);
 $label-color: #afb4c0;
-$value-color:rgb(69, 69, 69);
-$content-color:#2E2E48;
+$value-color: rgb(69, 69, 69);
+$content-color: #2e2e48;
 $medium: #2d3748;
 $light: #4a5568;
 $lighter: #718096;
 $font-main: "outfit";
-$secondary-font:"DM sans";
-$title-size:30px;
-$label-size:11px;
-$value-size:12px;
-$container-margin:30px;
-$container-section-margin:25px;
+$secondary-font: "DM sans";
+$title-size: 30px;
+$label-size: 11px;
+$value-size: 12px;
+$container-margin: 30px;
+$container-section-margin: 25px;
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
+body {
+  display: flex;
 }
 
-.sidebar{
-    background-color: $primary-color;
-    width: 30%;
-    height:auto;
+.sidebar {
+  background-color: $primary-color;
+  width: 30%;
+  height: auto;
 
-    .line{
-        border: none;
-        height: 1px;
-        background: $label-color;
-        margin: 20px 20px;
-    }
-   .banner{
+  .line {
+    border: none;
+    height: 1px;
+    background: $label-color;
+    margin: 20px 20px;
+  }
+  .banner {
     text-align: center;
-        .banner-photo{
-            width:100%;
-            object-fit: cover;
-            height: 100%;
-            margin-bottom: 25px;
+    .banner-photo {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      margin-bottom: 25px;
+    }
+    .name {
+      justify-self: center;
+      font-family: $font-main;
+      font-weight: 500;
+      color: $medium;
+    }
+    .role {
+      background-image: linear-gradient(to right, #a478e8, #516cf7);
+      color: transparent;
+      background-clip: text;
+      justify-self: center;
+      font-family: $font-main;
+      margin-top: 5px;
+      font-size: 18px;
+    }
+  }
+
+  .quote-section {
+    padding: 0 30px;
+    margin-bottom: 30px;
+
+    .quote {
+      font-size: 15px;
+      font-weight: 600;
+      color: $light;
+      font-family: $font-main;
+      padding: 0 30px;
+      margin-bottom: 10px;
+
+      q {
+        quotes: "“" "”" "‘" "’";
+        &::before {
+          content: open-quote;
+          font-size: 24px;
+          color: #8a8a8a;
         }
-        .name{
-            justify-self: center;
-            font-family: $font-main;
-            font-weight:500;
-            color: $medium;
-
+        &::after {
+          content: close-quote;
+          font-size: 24px;
+          color: #8a8a8a;
         }
-        .role{
-            background-image: linear-gradient(to right, #A478E8, #516CF7);
-            color: transparent;
-            background-clip: text;
-            justify-self: center;
-            font-family: $font-main;
-            margin-top: 5px;
-            font-size: 18px;
+      }
+    }
+
+    .author {
+      display: block;
+      text-align: left;
+      margin: 5px 0px 30px 30px;
+      font-size: $label-size;
+      color: #9ca3af;
+      font-family: $secondary-font;
+    }
+  }
+
+  .contact-section {
+    display: block;
+    padding: 0 30px;
+    margin-bottom: 40px;
+
+    .contact-details {
+      display: flex;
+      margin-left: 20px;
+      margin-bottom: 15px;
+
+      .contact-icon {
+        height: 20px;
+        width: 20px;
+        padding: 5px;
+        background-color: $label-color;
+        border-radius: 100px;
+        flex-shrink: 0;
+      }
+      .contact-content {
+        display: block;
+        font-family: $font-main;
+        margin-left: 10px;
+
+        .contact-label {
+          font-size: $label-size;
+          color: $label-color;
         }
-   }
 
-   .quote-section{
-        padding: 0 30px;   
-        margin-bottom: 30px;   
-
-        .quote{
-            font-size: 15px;
-            font-weight: 600;
-            color: $light;
-            font-family: $font-main;
-            padding: 0 30px;
-            margin-bottom: 10px;
-
-            q {
-                quotes: "“" "”" "‘" "’";
-                &::before {
-                    content: open-quote;
-                    font-size: 24px;
-                    color: #8a8a8a;
-                }
-                &::after {
-                    content: close-quote;
-                    font-size: 24px;
-                    color: #8a8a8a;
-                }
-            }
+        .contact-value {
+          font-size: $value-size;
+          color: $value-color;
         }
+      }
+    }
+  }
 
-        .author{
-            display: block;
-            text-align: left;
-            margin: 5px 0px 30px 30px;
+  .social-section {
+    display: block;
+    padding: 0 30px;
+    margin-bottom: 40px;
+
+    .social-title {
+      color: $label-color;
+      font-size: $label-size + 2px;
+      margin: 0px 0px 10px 20px;
+    }
+
+    .social-box {
+      display: block;
+
+      .social-details {
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 15px;
+
+        .social-icon {
+          height: 25px;
+          width: 25px;
+        }
+        .social-contents {
+          display: block;
+          font-family: $font-main;
+          margin-left: 10px;
+
+          .social-label {
             font-size: $label-size;
-            color: #9ca3af;
-            font-family: $secondary-font;
-        }
-   }
-
-    .contact-section{
-        display: block;
-        padding: 0 30px;
-        margin-bottom: 40px;
-
-        .contact-details{
-            display: flex;
-            margin-left: 20px;
-            margin-bottom: 15px;
-
-            .contact-icon{
-                height: 20px;
-                width: 20px;
-                padding: 5px;
-                background-color: $label-color;
-                border-radius: 100px;
-                flex-shrink: 0;
-            }
-            .contact-content{
-                display: block;
-                font-family: $font-main;
-                margin-left: 10px;
-
-                .contact-label{
-                    font-size: $label-size;
-                    color: $label-color;
-                }
-
-                .contact-value{
-                    font-size: $value-size;
-                    color:$value-color;
-                }
-            }
-        }
-
-    }
-
-    .social-section{
-        display: block;
-        padding: 0 30px;
-        margin-bottom: 40px;
-
-        .social-title{
             color: $label-color;
-            font-size: $label-size + 2px;
-            margin:0px 0px 10px 20px;
+          }
+
+          .social-value {
+            font-size: $value-size;
+            color: $value-color;
+          }
         }
-
-        .social-box{
-            display:block;
-
-            .social-details{
-            display: flex;
-            margin-left: 20px;
-            margin-bottom: 15px;
-
-                .social-icon{
-                    height: 25px;
-                    width: 25px;
-                }
-                .social-contents{
-                    display: block;
-                    font-family: $font-main;
-                    margin-left: 10px;
-
-                    .social-label{
-                        font-size: $label-size;
-                        color: $label-color;
-                    }
-
-                    .social-value{
-                        font-size: $value-size;
-                        color:$value-color;
-                    }
-                }
-            }
-        }
-
+      }
     }
-    .language-section{
-        display: block;
-        padding: 0 30px;
-        margin-bottom: 40px;
+  }
+  .language-section {
+    display: block;
+    padding: 0 30px;
+    margin-bottom: 40px;
 
-        .language-title{
+    .language-title {
+      color: $label-color;
+      font-size: $label-size + 2px;
+      margin: 0px 0px 10px 20px;
+    }
+
+    .language-box {
+      display: block;
+
+      .language-details {
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 15px;
+
+        .language-icon {
+          height: 25px;
+          width: 25px;
+        }
+        .language-contents {
+          display: block;
+          font-family: $font-main;
+          margin-left: 10px;
+
+          .language-label {
+            font-size: $label-size;
             color: $label-color;
-            font-size: $label-size + 2px;
-            margin:0px 0px 10px 20px;
+          }
+
+          .language-value {
+            font-size: $value-size;
+            color: $value-color;
+          }
         }
-
-        .language-box{
-            display:block;
-
-            .language-details{
-            display: flex;
-            margin-left: 20px;
-            margin-bottom: 15px;
-
-                .language-icon{
-                    height: 25px;
-                    width: 25px;
-                }
-                .language-contents{
-                    display: block;
-                    font-family: $font-main;
-                    margin-left:10px;
-
-                    .language-label{
-                        font-size: $label-size;
-                        color: $label-color;
-                    }
-
-                    .language-value{
-                        font-size: $value-size;
-                        color:$value-color;
-                    }
-                }
-            }
-        }
-
+      }
     }
+  }
 }
 
-.container{
-    background-color:$secondary-color;
-    margin-left: $container-margin;
+.container {
+  background-color: $secondary-color;
+  margin-left: $container-margin;
 
-           
-        .section-header{
-            margin-left:$container-section-margin;
-            display: flex;
-            align-items: center;
-            
-            .section-title{
-                font-family: $font-main;
-                font-weight: 500;
-                color: $content-color;
-            }
+  //   project-section
+  .project-section {
+    margin: 20px 30px 80px 0px;
+    border-left: 1px solid $label-color;
+    height: 200px;
 
-            // .skills__dot{
-            //     display: inline-block;           // prevents stretching from flex/grid
-            //     width: 8px;
-            //     height: 8px;
-            //     background-color: #6c63ff;
-            //     border-radius: 50%;              // makes it a circle
-            //     border: 10px solid #fff;
-            //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
-            //     //flex-shrink: 0; 
-            // }
-        }
+    .section-header {
+      margin-left: $container-section-margin;
+      display: flex;
+      align-items: center;
+      // Purple dot before title
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #6c5ce7;
+        border-radius: 50%;
+        margin-right: 15px;
+        border: 5px solid #f4f7ff;
+      }
 
-    .project-section{
-        margin: 20px 30px 80px 0px;
-        border-left: 1px solid $label-color;
-        height: 200px;
-       
-        .section-header{
-            margin-left:$container-section-margin;
-            display: flex;
-            align-items: center;
-            
-            .section-title{
-                font-family: $font-main;
-                font-weight: 500;
-                color: $content-color;
-            }
-
-            // .skills__dot{
-            //     display: inline-block;           // prevents stretching from flex/grid
-            //     width: 8px;
-            //     height: 8px;
-            //     background-color: #6c63ff;
-            //     border-radius: 50%;              // makes it a circle
-            //     border: 10px solid #fff;
-            //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
-            //     //flex-shrink: 0; 
-            // }
-        }
-        .project-list{
-            display: flex;
-            font-family: $secondary-font;
-
-            .project-card{
-                background-color: $primary-color;
-                margin-left: $container-section-margin;
-                border-radius: 12px;
-                padding: 24px;
-                height: 180px;
-                margin-top:20px ;
-                display: block;
-                gap: 16px;
-
-                .project-card-content{
-                    display: flex;
-
-                    .project-icon {
-                        width: 80px;
-                        height: 80px;
-                        flex-shrink: 0;
-                        border-radius: 8px;
-                        padding: 8px;
-                    }
-
-                    .project-content{
-                        margin-left: $container-section-margin;
-
-                        .project-title{
-                            font-weight: 400;
-                        }
-                        .project-description {
-                            font-size: 14px;
-                            color: $lighter;
-                            line-height: 1.5;
-                        }
-                    }
-                }
-            }
-            .link-content{
-                margin-top: 15px;
-                padding: 8px;
-
-                .link-icon{
-                    height: 20px;
-                    width: 20px;
-                    padding: 5px;
-                    background-color: #E1E7FE;
-                    border-radius: 100px;
-                    flex-shrink: 0;
-                }
-                .project-link{
-                    margin-top: 10px;
-                    font-weight: bold;
-                }
-            }  
-        }
+      .section-title {
+        font-family: $font-main;
+        font-weight: 500;
+        color: $content-color;
+      }
     }
+    .project-list {
+      display: flex;
+      font-family: $secondary-font;
 
-// skills
-.skills-section {
+      .project-card {
+        background-color: $primary-color;
+        margin-left: $container-section-margin;
+        border-radius: 12px;
+        padding: 24px;
+        height: 180px;
+        margin-top: 20px;
+        display: block;
+        gap: 16px;
+
+        .project-card-content {
+          display: flex;
+
+          .project-icon {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            padding: 8px;
+          }
+
+          .project-content {
+            margin-left: $container-section-margin;
+
+            .project-title {
+              font-weight: 400;
+            }
+            .project-description {
+              font-size: 14px;
+              color: $lighter;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+      .link-content {
+        margin-top: 15px;
+        padding: 8px;
+
+        .link-icon {
+          height: 20px;
+          width: 20px;
+          padding: 5px;
+          background-color: #e1e7fe;
+          border-radius: 100px;
+          flex-shrink: 0;
+        }
+        .project-link {
+          margin-top: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  // skill-section
+  .skills-section {
     margin-bottom: 60px;
 
+    .section-header {
+      margin-left: $container-section-margin;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #6c5ce7;
+        border-radius: 50%;
+        margin-right: 15px;
+        border: 5px solid #f4f7ff;
+      }
+
+      .section-title {
+        font-family: $font-main;
+        font-weight: 500;
+        color: $content-color;
+      }
+    }
+    // design-skills
     .skills__group {
       margin-bottom: 30px;
       display: grid;
@@ -355,21 +352,25 @@ body{
       .skills__category {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        margin-left: $container-section-margin;
 
         .skills__icon {
-          width: 48px;
-          height: 48px;
+          width: 30px;
+          height: 30px;
           margin-bottom: 10px;
+          padding: 5px;
+          background-color: #efe2f9;
+          border-radius: 50px;
+          align-items: center;
         }
 
         .skills__label {
           font-size: 14px;
-          color: red;
+          color: $value-color;
           font-weight: 600;
           text-transform: uppercase;
           letter-spacing: 0.5px;
+          align-self: left;
         }
       }
 
@@ -377,273 +378,416 @@ body{
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
+        width: max-content;
+        height: max-content;
 
         .skills__item {
-          background: grey;
-          color: green;
+          background: $primary-color;
           padding: 8px 12px;
-          border-radius: 20px;
+          border-radius: 8px;
           font-size: 13px;
           font-weight: 500;
-          border: 1px solid black;
+          color: #9251f7;
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          padding: 15px;
+
+          .line {
+            border-left: $label-color 1px solid;
+            opacity: 0.5;
+            height: 60%;
+          }
+          .item-group {
+            gap: 8px;
+          }
 
           .skills__list {
-            list-style: none;
             margin: 0;
-            padding: 0;
-
-            li {
-              display: inline;
-              &:not(:last-child)::after {
-                content: ", ";
-              }
-            }
+            padding: 15px;
+            justify-content: center;
           }
         }
       }
     }
   }
-    // exp
-    .experience-section {
-        margin-bottom: 60px;
-        
-        .section-header{
-            margin-top: 20px;
-            margin-left:$container-section-margin;
-            display: flex;
-            align-items: center;
-            
-            .section-title{
-                font-family: $font-main;
-                font-weight: 500;
-                color: $content-color;
-            }
+  // skills-development
+  .skills__group__dev {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+    align-items: start;
 
-            // .skills__dot{
-            //     display: inline-block;           // prevents stretching from flex/grid
-            //     width: 8px;
-            //     height: 8px;
-            //     background-color: #6c63ff;
-            //     border-radius: 50%;              // makes it a circle
-            //     border: 10px solid #fff;
-            //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
-            //     //flex-shrink: 0; 
-            // }
-        }
-        .experience-list {
-            margin-left:$container-section-margin;
-
-            .experience-details {
-                margin-bottom: 40px;
-                display: flex;
-                gap: 20px;
-                align-items: flex-start;
-
-                &:last-child {
-                margin-bottom: 0;
-                }
-
-                    .experience-date {
-                        font-size: 12px;
-                        color: $lighter;
-                        font-weight: 500;
-                        min-width: 100px;
-                        flex-shrink: 0;
-                        }
-
-                    .company-logo {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 8px;
-                        flex-shrink: 0;
-                    }
-
-                .experience-content {
-                    flex: 1;
-
-                    .experience-title {
-                        font-size: 16px;
-                        color: $medium;
-                        font-weight: 600;
-                        margin-bottom: 5px;
-                    }
-
-                    .experience-company {
-                        font-size: 14px;
-                        color: $light;
-                        font-weight: 500;
-                        margin-bottom: 10px;
-                    }
-
-                    .experience-description {
-                        font-size: 14px;
-                        color: $lighter;
-                        line-height: 1.6;
-                    }
-                }
-            }
-        }
+    &:last-child {
+      margin-bottom: 0;
     }
 
-    // education section
-    .education-section {
-    margin-bottom: 60px;
-    margin-left: $container-section-margin;
+    .skills__category {
+      display: flex;
+      flex-direction: column;
+      margin-left: $container-section-margin;
 
-    .section-header{
-            margin-top: 20px;
-            margin-left:$container-section-margin;
-            display: flex;
-            align-items: center;
-            
-            .section-title{
-                font-family: $font-main;
-                font-weight: 500;
-                color: $content-color;
-            }
+      .skills__icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: #e1e7fe;
+        border-radius: 50px;
+      }
 
-            // .skills__dot{
-            //     display: inline-block;           // prevents stretching from flex/grid
-            //     width: 8px;
-            //     height: 8px;
-            //     background-color: #6c63ff;
-            //     border-radius: 50%;              // makes it a circle
-            //     border: 10px solid #fff;
-            //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
-            //     //flex-shrink: 0; 
-            // }
-        }
+      .skills__label {
+        font-size: 14px;
+        color: $value-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        align-self: left;
+      }
+    }
 
-    .education-list {
+    .skills__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: max-content;
+      height: max-content;
+
+      .skills__item {
+        background: $primary-color;
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #516cf7;
+        align-items: center;
+        padding: 15px;
         display: flex;
 
-      .education-cards {
-        margin-bottom: 35px;
-        display: block;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-        margin-right: 10px;
-        background-color: #F7F9FC;
-        border-radius: 12px;
-        width: 300px;
-        height: max-content;
-        margin-top: 30px;
-
-        &:last-child {
-          margin-bottom: 0;
+        .line {
+          border-left: $label-color 1px solid;
+          opacity: 0.5;
+          height: 60%;
         }
 
-        .education-details {
+        .item-group {
+          gap: 8px;
+          padding: 10px;
+        }
+        .item-group-col {
+          margin-left: 10px;
+        }
+        .skills__list {
+          margin: 0;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+// experience sectionS
+.experience-section {
+  margin-bottom: 60px;
+  position: relative;
+
+  .section-header {
+    margin-left: $container-section-margin;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    // Purple dot before title
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #6c5ce7;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 5px solid #f4f7ff;
+    }
+
+    .section-title {
+      font-family: $font-main;
+      font-weight: 500;
+      color: $content-color;
+    }
+  }
+
+  .experience-list {
+    margin-left: $container-section-margin + 100px;
+    position: relative;
+
+    .experience-details {
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 30px;
+      align-items: start;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      // Bullet point styling
+      &::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        width: 6px;
+        height: 6px;
+        background-color: #6c5ce7;
+        border-radius: 50%;
+        z-index: 1;
+        border: 5px solid #f4f7ff;
+        box-shadow: rgba(99, 99, 99, 0.185) 0px 0px 0px 1px;
+      }
+
+      .experience-left {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 10px;
+        .time-address {
+          display: flex;
+          gap: 8px;
+
+          .address-icon {
+            height: 10px;
+            width: 10px;
+          }
+          .address {
+            font-size: $label-size;
+            color: $label-color;
+          }
+          .experience-date {
+            font-size: 12px;
+            color: $lighter;
+            font-weight: 500;
+            font-family: $secondary-font;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+        }
+
+        .experience-header {
           display: flex;
           align-items: center;
           gap: 12px;
 
-          .education-logo {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
+          .company-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
             flex-shrink: 0;
+            object-fit: cover;
+            background-color: #000;
           }
 
-          .education-name {
-            font-size: 14px;
-            color: $light;
-            font-weight: 500;
-            text-transform: capitalize;
+          .experience-info {
+            .experience-title {
+              font-size: 14px;
+              color: $medium;
+              font-weight: 500;
+              margin-bottom: 2px;
+              font-family: $font-main;
+            }
+
+            .experience-company {
+              font-size: 14px;
+              color: $content-color;
+              font-weight: 600;
+              font-family: $font-main;
+            }
           }
         }
-
-        .education-content {
-          flex: 1;
-          margin-top: 10px;
-
-          .education-title {
-            font-size: 16px;
-            color: $medium;
-            font-weight: 600;
-            margin-bottom: 5px;
-          }
-
-          .education-date {
-            font-size: 13px;
-            color: $lighter;
-            font-weight: 500;
-          }
+      }
+      .experience-content {
+        .experience-description {
+          font-size: 13px;
+          color: $lighter;
+          line-height: 1.6;
+          font-family: $secondary-font;
         }
       }
     }
   }
+}
+
+// education section
+.education-section {
+  margin-bottom: 60px;
+  margin-left: $container-section-margin;
+
+  .section-header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #6c5ce7;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 5px solid #f4f7ff;
+    }
+
+    .section-title {
+      font-family: $font-main;
+      font-weight: 500;
+      color: $content-color;
+    }
+  }
+
+  .education-list {
+    display: flex;
+
+    .education-cards {
+      margin-bottom: 35px;
+      display: block;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      margin-right: 10px;
+      background-color: #f7f9fc;
+      border-radius: 12px;
+      width: 300px;
+      height: max-content;
+      margin-top: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .education-details {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .education-logo {
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+          flex-shrink: 0;
+        }
+
+        .education-name {
+          font-size: 14px;
+          color: $light;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+      }
+
+      .education-content {
+        flex: 1;
+        margin-top: 10px;
+
+        .education-title {
+          font-size: 16px;
+          color: $medium;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+
+        .education-date {
+          font-size: 13px;
+          color: $lighter;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
 
 // tools
-  .tools-section {
-    margin-bottom: 60px;
+.tools-section {
+  margin-bottom: 60px;
+  margin-left: $container-section-margin;
+  margin-right: 30px;
+
+  .section-header {
+    margin-top: 20px;
     margin-left: $container-section-margin;
-    margin-right: 30px;
+    display: flex;
+    align-items: center;
 
-    .section-header{
-            margin-top: 20px;
-            margin-left:$container-section-margin;
-            display: flex;
-            align-items: center;
-            
-            .section-title{
-                font-family: $font-main;
-                font-weight: 500;
-                color: $content-color;
-            }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #6c5ce7;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 5px solid #f4f7ff;
+    }
 
-            // .skills__dot{
-            //     display: inline-block;           // prevents stretching from flex/grid
-            //     width: 8px;
-            //     height: 8px;
-            //     background-color: #6c63ff;
-            //     border-radius: 50%;              // makes it a circle
-            //     border: 10px solid #fff;
-            //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
-            //     //flex-shrink: 0; 
-            // }
+    .section-title {
+      font-family: $font-main;
+      font-weight: 500;
+      color: $content-color;
+    }
+
+    // .skills__dot{
+    //     display: inline-block;           // prevents stretching from flex/grid
+    //     width: 8px;
+    //     height: 8px;
+    //     background-color: #6c63ff;
+    //     border-radius: 50%;              // makes it a circle
+    //     border: 10px solid #fff;
+    //     box-shadow: 0 0 0 1px rgba(195, 195, 195, 0.104);
+    //     //flex-shrink: 0;
+    // }
+  }
+
+  .tool-lists {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .tool-row1,
+    .tool-row2 {
+      display: flex;
+
+      .tool-card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 12px;
+        background: #f7f9fc;
+        width: max-content;
+        margin-right: 20px;
+        margin-bottom: 10px;
+
+        .tool-icon {
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+          margin: 0 auto 10px;
+          display: block;
         }
 
-    .tool-lists {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-
-        .tool-row1, .tool-row2{
-            display: flex;
-            
-            .tool-card {
-                text-align: center;
-                padding: 20px;
-                border-radius: 12px;
-                background: #F7F9FC;
-                width: max-content;
-                margin-right: 20px;
-                margin-bottom: 10px;
-
-                .tool-icon {
-                width: 48px;
-                height: 48px;
-                border-radius: 12px;
-                margin: 0 auto 10px;
-                display: block;
-                }
-
-                .tool-name {
-                font-size: 14px;
-                color: $medium;
-                font-weight: 600;
-                margin-bottom: 5px;
-                text-transform: capitalize;
-                }
-
-                .tool-detail {
-                font-size: 12px;
-                color: $lighter;
-                }
-            }
+        .tool-name {
+          font-size: 14px;
+          color: $medium;
+          font-weight: 600;
+          margin-bottom: 5px;
+          text-transform: capitalize;
         }
-    }    
+
+        .tool-detail {
+          font-size: 12px;
+          color: $lighter;
+        }
+      }
+    }
   }
 }
